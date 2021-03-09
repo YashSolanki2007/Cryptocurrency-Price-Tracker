@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>
+        .body {
+            background: linear-gradient(to right, rgb(231, 231, 247), white);
+            font-family: sans-serif;
+        }
+
+        .moneyInp {
+            width: 40%;
+            height: 23px;
+        }
+
+        .mainImg {
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypt Price Tracker</title>
+</head>
+
+<body class='body'>
+    <center>
+        <h1>Cryptocurrency Price Tracker</h1>
+        <br />
+        <img class='mainImg' src='https://www.finextra.com/finextra-images/oped/40.jpeg'>
+        <br />
+        <br />
+        <form method='POST'>
+            <input class='moneyInp' name='moneyInp' placeholder="Enter name of cryptocurrency" />
+        </form>
+        <br />
+        <hr />
+        <p>
+        <h3>The Name of the currency is</h3>
+        {{ crypt_name }}
+        <br />
+        <h3>The Price of one coin of the currency in Dollars is</h3>
+        {{ crypt_price }}
+        <hr />
+        </p>
+    </center>
+</body>
+
+</html>
